@@ -13,26 +13,8 @@
       <h1>JSTemplates</h1>
     </div>
     <!-- ************************************************************************************ -->
-    <div class="firstTemplate">
-      <!-- ----------------------------------------------------- -->
-      <!-- template skeleton  -->
-      <!-- <button data-open-modal="#modalId" class="openBtn commonBtn">
-      Dialog Button Name
-    </button>
-    <div class="modal" id="modalId">
-      <div class="header">
-        <h1 class="title">TITLE THEORY</h1>
-        <button class="closeBtn" data-close-button>&times;</button>
-      </div>
-      <div class="popUpData">
-        INNER DATA
-        <ul class="certificates">
-          <li><strong>Certificate points 1</strong></li>
-        </ul>
-      </div>
-    </div> -->
-      <!-- ----------------------------------------------------- -->
-      <!-- Actual implementation  -->
+    <div class="templates">
+      <!-- template1 button -->
       <div class="btnDesc">
         <button data-open-modal="#modalId1" class="openBtn commonBtn">
           Template 1
@@ -42,12 +24,55 @@
           <a data-open-modal="#modalId1">Click here</a> to open.
         </p>
       </div>
+      <!-- template2 button  -->
+      <div class="btnDesc">
+        <button data-open-modal="#modalId2" class="openBtn commonBtn">
+          Template 2
+        </button>
+        <p>
+          Beautiful card design consists of an image and description.
+          <a data-open-modal="#modalId2">Click here</a> to open.
+        </p>
+      </div>
+
+      <!-- template1 implemetation -->
       <div class="modal" id="modalId1">
         <div class="header">
           <h1 class="title">Thafzil Ahamed</h1>
           <button class="closeBtn" data-close-button>&times;</button>
         </div>
         <div class="popUpData">
+          Angular and Java developer with 2+ years of experience having deep
+          knowledge and proficiency in JavaScript, Java, HTML, CSS and passion
+          for building responsive, accessible and robust website in the
+          mobile-first approach.
+          <!-- <div class="certificates"> -->
+          <ul class="certificates">
+            <li><strong>Infosys Certified Angular Developer</strong></li>
+            <li><strong>Infosys Certified JavaScript Developer</strong></li>
+            <li><strong>Infosys Certified Spring REST Professinal</strong></li>
+          </ul>
+          <!-- </div> -->
+        </div>
+      </div>
+
+      <!-- template2 implementation  -->
+      <div class="modal" id="modalId2">
+        <div class="header">
+          <div class="profile"></div>
+          <ul>
+            <li>Thafzil Ahamed</li>
+            <li>UI Developer</li>
+            <li>+91-7901246315</li>
+            <li>
+              <a href="mailto:thafzilshaik03@gmail.com">Drop me a mail here</a>
+            </li>
+          </ul>
+        </div>
+        <button class="moreBtn" id="more">
+          <span class="smalltxt">View more</span>&raquo;
+        </button>
+        <div class="expandData" id="expand">
           Angular and Java developer with 2+ years of experience having deep
           knowledge and proficiency in JavaScript, Java, HTML, CSS and passion
           for building responsive, accessible and robust website in the

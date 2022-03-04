@@ -30,6 +30,13 @@ body {
   padding: 10px 10px 15px 20px;
 }
 
+.centerHead {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 5px 0 grey;
+  padding: 10px 10px 15px 20px;
+}
+
 .header .title {
   margin-bottom: 0px;
 }
@@ -51,6 +58,30 @@ body {
   padding: 15px 20px;
 }
 
+.expandData {
+  transition: 250ms ease-in-out;
+  transform: translateY(-100%) scale(0);
+  height: 0;
+}
+
+.expandData.active {
+  transform: translateY(0) scale(1);
+  padding: 15px 20px;
+  height: fit-content;
+}
+
+.moreBtn {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  border: none;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+  height: max-content;
+  width: max-content;
+}
+
 #overlay {
   position: fixed;
   top: 0;
@@ -59,6 +90,7 @@ body {
   left: 0;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: 250ms ease-in-out;
   pointer-events: none;
 }
 
@@ -100,7 +132,7 @@ body {
   padding: 0px 5px;
 }
 
-.firstTemplate {
+.templates {
   padding: 0px 15px;
 }
 
@@ -126,4 +158,19 @@ body {
   margin-left: 8px;
   margin-right: 8px;
   color: chartreuse;
+  text-decoration: underline;
+}
+
+.profile {
+  border-radius: 50%;
+  border: 1px dotted chartreuse;
+  height: 125px;
+  width: 125px;
+  background: url(./assets/wwe.jpg);
+  background-size: cover;
+}
+
+.smalltxt {
+  font-family: cursive;
+  font-size: small;
 }

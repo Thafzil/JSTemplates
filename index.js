@@ -1,7 +1,7 @@
 const openBtns = document.querySelectorAll("[data-open-modal]");
 const closeBtns = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
-
+const more = document.getElementById("more");
 // open modal
 openBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -39,3 +39,11 @@ function closeModal(modal) {
   modal.classList.remove("active");
   overlay.classList.remove("active");
 }
+
+more.addEventListener("click", () => {
+  const expand = document.getElementById("expand");
+  expand.classList.toggle("active");
+  more.innerHTML = expand.classList.contains("active")
+    ? '<span class="smalltxt">View less</span> &laquo;'
+    : '<span class="smalltxt">View more</span> &raquo;';
+});
