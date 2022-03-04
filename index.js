@@ -23,6 +23,8 @@ if (overlay) {
   overlay.addEventListener("click", () => {
     const modals = document.querySelectorAll(".modal.active");
     modals.forEach((modal) => closeModal(modal));
+    const expand = document.getElementById("expand");
+    expand.classList.remove("active");
   });
 }
 
