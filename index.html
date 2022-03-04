@@ -5,8 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JAVASCRIPT TEMPLATES</title>
-    <script src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- template skeleton  -->
+    <!-- ----------------------------------------------------- -->
+    <button data-open-modal="#modalId" class="openBtn">
+      Dialog Button Name
+    </button>
+    <div class="modal" id="modalId">
+      <div class="header">
+        <h1 class="title">TITLE</h1>
+        <button class="closeBtn" data-close-button>&times;</button>
+      </div>
+      <div class="popUpData">
+        INNER DATA
+        <ul class="certificates">
+          <li><strong>Certificate points 1</strong></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ----------------------------------------------------- -->
+
+    <!-- Actual implementation  -->
+    <button data-open-modal="#modalId1" class="openBtn">Open Dialog</button>
+
+    <div class="modal" id="modalId1">
+      <div class="header">
+        <h1 class="title">Thafzil Ahamed</h1>
+        <button class="closeBtn" data-close-button>&times;</button>
+      </div>
+      <div class="popUpData">
+        Angular and Java developer with 2+ years of experience having deep
+        knowledge and proficiency in JavaScript, Java, HTML, CSS and passion for
+        building responsive, accessible and robust website in the mobile-first
+        approach.
+        <!-- <div class="certificates"> -->
+        <ul class="certificates">
+          <li><strong>Infosys Certified Angular Developer</strong></li>
+          <li><strong>Infosys Certified JavaScript Developer</strong></li>
+          <li><strong>Infosys Certified Spring REST Professinal</strong></li>
+        </ul>
+        <!-- </div> -->
+      </div>
+    </div>
+    <!-- ----------------------------------------------------- -->
+    <div id="overlay"></div>
+    <script src="index.js"></script>
+  </body>
 </html>

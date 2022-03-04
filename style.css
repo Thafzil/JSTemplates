@@ -1,0 +1,71 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transition: 250ms ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 10;
+  background: white;
+  width: 350px;
+  max-width: 85%;
+  /* border: 2px solid rgb(1, 255, 200); */
+  border-radius: 8px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* border-bottom: 1px dotted black; */
+  box-shadow: 0 0 5px 0 grey;
+  padding: 10px 10px 15px 20px;
+}
+
+.header .title {
+  margin-bottom: 0px;
+}
+
+.header .closeBtn {
+  display: flex;
+  font-size: 1.25rem;
+  border: none;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+  height: max-content;
+  width: max-content;
+  border: 1px dotted black;
+  border-radius: 50%;
+}
+
+.popUpData {
+  padding: 15px 20px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.openBtn {
+  cursor: pointer;
+}
+
+.certificates {
+  padding: 15px 20px !important;
+}
