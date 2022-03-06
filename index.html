@@ -34,6 +34,16 @@
           <a data-open-modal="#modalId2">Click here</a> to open.
         </p>
       </div>
+      <!-- template3 button  -->
+      <div class="btnDesc">
+        <button data-open-modal="#modalId3" class="openBtn commonBtn">
+          Template 3
+        </button>
+        <p>
+          Alternate color tabular format to show rows and columns.
+          <a data-open-modal="#modalId3">Click here</a> to open.
+        </p>
+      </div>
 
       <!-- template1 implemetation -->
       <div class="modal" id="modalId1">
@@ -59,7 +69,12 @@
       <!-- template2 implementation  -->
       <div class="modal" id="modalId2">
         <div class="header">
-          <div class="profile"></div>
+          <a
+            href="./assets/thafzil.jpg"
+            download
+            class="profile"
+            id="profileImg"
+          ></a>
           <ul>
             <li>Thafzil Ahamed</li>
             <li>UI Developer</li>
@@ -86,9 +101,61 @@
           <!-- </div> -->
         </div>
       </div>
+
+      <!-- template3 implementation -->
+      <div class="modal" id="modalId3">
+        <table>
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Company</th>
+              <th>Address</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Thafzil</td>
+              <td>23</td>
+              <td>Age</td>
+              <td>Infosys</td>
+              <td>Bangalore</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Thafzil</td>
+              <td>23</td>
+              <td>Age</td>
+              <td>Infosys</td>
+              <td>Bangalore</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Thafzil</td>
+              <td>23</td>
+              <td>Age</td>
+              <td>Infosys</td>
+              <td>Bangalore</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Thafzil</td>
+              <td>23</td>
+              <td>Age</td>
+              <td>Infosys</td>
+              <td>Bangalore</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <!-- ************************************************************************************ -->
     <div id="overlay"></div>
+    <div class="copyRight">
+      <p>Copyright 2019-2022 by Thafzil Ahamed. All Rights Reserved.</p>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

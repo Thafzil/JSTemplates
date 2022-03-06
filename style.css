@@ -166,11 +166,33 @@ body {
   border: 1px dotted chartreuse;
   height: 125px;
   width: 125px;
-  background: url(./assets/wwe.jpg);
+  background: url(./assets/thafzil.jpg);
   background-size: cover;
+  cursor: pointer;
 }
 
 .smalltxt {
   font-family: cursive;
   font-size: small;
+}
+
+.copyRight {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+  background: #01ffc845;
+  box-shadow: 2px 0 0 0 black;
+}
+
+#modalId3 table {
+  border: 2px dotted chartreuse;
+}
+
+#modalId3 table td {
+  border: 1px solid black;
 }

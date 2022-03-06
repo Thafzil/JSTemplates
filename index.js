@@ -2,6 +2,8 @@ const openBtns = document.querySelectorAll("[data-open-modal]");
 const closeBtns = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
 const more = document.getElementById("more");
+const img = document.getElementById("profileImg");
+
 // open modal
 openBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -42,6 +44,7 @@ function closeModal(modal) {
   overlay.classList.remove("active");
 }
 
+// more and less desc
 more.addEventListener("click", () => {
   const expand = document.getElementById("expand");
   expand.classList.toggle("active");
@@ -49,3 +52,9 @@ more.addEventListener("click", () => {
     ? '<span class="smalltxt">View less</span> &laquo;'
     : '<span class="smalltxt">View more</span> &raquo;';
 });
+
+// img btn download
+
+// img.addEventListener('click',()=>{
+//   img.
+// })
